@@ -142,7 +142,7 @@ const FormApp = () => {
       submitData.append('bio', formData.bio);
       submitData.append('profileImage', formData.profileImage);
 
-      const response = await fetch('http://localhost:5000/api/submit-form', {
+      const response = await fetch('https://formspree.io/f/xqergdjb', {
         method: 'POST',
         body: submitData,
       });
